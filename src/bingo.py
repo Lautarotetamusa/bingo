@@ -1,6 +1,9 @@
 
-def saludo():
-	return "Hola que tal"
-
-def restar(a, b):
-	return a - b
+def carton():
+	carton_lleno = (
+	        (1,0,0,1,1,0,1,0,1),
+	        (0,1,1,1,0,1,1,1,1),
+	        (0,1,0,0,1,0,0,1,0) 
+	)
+	return carton_lleno
+print(carton())
