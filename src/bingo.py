@@ -1,9 +1,20 @@
 
 def carton():
-	carton_lleno = (
-	        (1,1,1,1,1,1,1,1,0),
-	        (0,0,0,0,0,0,0,0,0),
-                (0,1,0,1,1,1,1,1,1) 
-	)
-	return carton_lleno
+	carton = (
+	        (1,0,0,1,1,0,1,0,1),
+	        (0,1,1,1,0,1,1,1,1),
+                (0,1,0,0,1,0,0,1,0) 
+	    )
+	return carton
+
+
+def carton_test_filas_vacias():
+    carton = (
+                (1,1,1,1,1,1,1,0,1),
+                (0,0,0,0,0,0,0,0,0),
+                (1,1,1,1,1,1,0,1,0)
+             )
+        return carton
+
+
 print(carton())
