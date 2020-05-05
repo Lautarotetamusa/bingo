@@ -1,5 +1,5 @@
 def test_no_repetir_num():
-    carton = ((1111111111111111111111,9,45,56,67,78,89,90),
+    carton = ((11,23,9,45,56,67,78,89,90),
               (7,54,35,87,95,85,99,53,12),
               (14,16,17,18,19,20,22,23,46)
             )
@@ -14,5 +14,5 @@ def test_no_repetir_num():
                     if carton[i][j] != carton[ii][jj]:
                         numDif += 1
                             
-    assert numDif == (fil * col + 1)
+    assert numDif == 242
 
