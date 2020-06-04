@@ -5,7 +5,8 @@ def test_contar_celdas_ocupadas():
     celdas_ocupadas = 0
     for fila in mi_carton:
 	for celda in fila:
-	    celdas_ocupadas += celda
+            if celda != 0:
+	    celdas_ocupadas += 1
 	
     assert celdas_ocupadas == 15
 

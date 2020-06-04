@@ -1,20 +1,31 @@
-# Consignas 
 
-- Test que valide que un carton tenga exactamente 
-15 celdas ocupadas
+# Reglas que hacen que un cartón sea considerado válido:
+
+- Los números del carton se encuentran en el rango 1 a 90.
+- No hay números repetidos en el carton.
+- Cada fila de un carton tiene exactamente 5 celdas ocupadas.
+- Cada carton es una matrix de 3 x 9.
+- Cada carton tiene 15 celdas ocupadas.
+- Los números de las columnas izquierdas son menores que los de las columnas a la derecha.
+- Para una misma columna, sus números están ordenados de menor a mayor de arriba hacia abajo.
+- No pueden existir columnas vacias.
+- No pueden existir columnas con sus tres celdas ocupadas.
+- Cada carton debe tener 3 y solo 3 columas con solo una celda ocupada.
+- En una fila no existen más de dos celdas vacías consecutivas.
+- En una fila no existen más de dos celdas ocupadas consecutivas.
 
 
-- Validar que en todas las columnas haya al menos 
-1 celda ocupada
 
-- Validar que no haya niguna fila vacia
 
-- Hacer que haya una bifurcacion en las ramas
 
-+ numeros del 1 al 90
 
-+ van avanzando de izq a derecha
 
-+ para una columna los numeros menores esta arriba de los menores
 
-+ no repetidos
+
+
+
+
+
+
+
+
