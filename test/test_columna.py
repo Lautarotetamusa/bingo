@@ -5,10 +5,16 @@ carton = ((0,1,3,4,5,0,0,8,9),
          )
 
 
-carton_test_tres = ((0,1,3,4,5,4,0,8,9),
-                    (1,2,0,4,0,6,0,8,0),
-                    (0,0,2,0,0,0,6,0,8)
-                     )
+carton3 = ((0,1,3,4,5,4,0,8,9),
+           (1,2,0,4,0,6,0,8,0),
+           (0,0,2,0,0,0,6,0,8)
+          )
+
+carton4 = ((0,10,20,30,40,50,60,70,80),
+           (2,11,21,31,41,51,61,71,81),
+           (9,19,29,39,49,59,69,79,89)
+          )
+
 
 
 
@@ -37,10 +43,26 @@ def test_no_3_ocupadas():
 
 
 def test_tres_con_una_celda():
-    cont = 0
+    una_celda = 0
     for i in range(0, 9):
-        c = columna(carton_test_tres, i)
+        c = columna(carton3, i)
         if cant_celdas(c) == 1:
-            cont = cont + 1
+            una_celda = una_celda + 1
 
-    assert cont == 3
+    assert una_celda == 3
+
+def decena(col, i):
+    c = 0
+    for celda in col:
+        if celda == 0:
+            c = c + 1
+        elif celda < 10*(i+1) and celda >= 10*i:
+            c = c + 1
+
+    return c == 3
+
+def test_decena_ordenadas():
+    for i in range(0, 9):
+        col = columna(carton4, i)
+        assert decena(col, i)
+            
