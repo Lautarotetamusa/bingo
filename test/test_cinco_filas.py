@@ -1,18 +1,7 @@
-from src.bingo import carton
+from src.carton import intentoCarton
+from test.tests import cinco_celdas
 
-carton2 = ((1, 2, 3, 4 ,5, 0, 0, 0, 0),
-           (1, 2, 3, 4 ,5, 0, 0, 0, 0),
-           (1, 2, 3, 4 ,5, 0, 0, 0, 0)
-          )
 
 def test_cinco_celdas():
-    cant_celdas = 0
-    for fila in carton2:
-        for celda in fila:
-            if celda != 0:
-                cant_celdas += 1
-
-        assert cant_celdas == 5
-        cant_celdas = 0
-
-
+    mi_carton = intentoCarton()
+    assert cinco_celdas(mi_carton)

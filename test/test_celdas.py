@@ -1,25 +1,13 @@
-from src.bingo import carton
+from src.carton import intentoCarton
+from test.tests import columas_vacias
+from test.tests import contar_celdas_ocupadas
 
 def test_contar_celdas_ocupadas():
-    mi_carton = carton()
-    celdas_ocupadas = 0
-    for fila in mi_carton:
-	for celda in fila:
-            if celda != 0:
-	        celdas_ocupadas += 1
-	
-    assert celdas_ocupadas == 15
+    mi_carton = intentoCarton()
+    assert contar_celdas_ocupadas(mi_carton)
 
 
 
 def test_columas_vacias():
-    contador = 0
-    mi_carton = carton()
-    cant_columnas = 9
-
-    for i in range(cant_columnas):
-        if (mi_carton[0][i] + mi_carton[1][i] + mi_carton[2][i]) >= 1:
-            contador += 1
-            
-    assert contador == cant_columnas
-        
+    mi_carton = intentoCarton()
+    assert columas_vacias(mi_carton)
