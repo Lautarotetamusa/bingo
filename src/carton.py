@@ -1,5 +1,6 @@
 import random
 import math
+
 def intentoCarton():
 
     contador = 0
@@ -70,5 +71,3 @@ def imprimirCarton(carton):
         for fila in range(9):
             print(carton[columna][fila])
         print('\n')
-
-imprimirCarton(intentoCarton())
