@@ -1,3 +1,5 @@
+from tests import *
+from bingo import mostrar
 import random
 import math
 
@@ -71,3 +73,39 @@ def imprimirCarton(carton):
         for fila in range(9):
             print(carton[columna][fila])
         print('\n')
+
+def testCarton(carton):
+    if(ord_filas(carton)
+	and no_repetir_num(carton)
+	and filas_vacias(carton)
+	and no_dos_vacias(carton)
+	and no_dos_ocupadas(carton)
+	and no_vacias(carton)
+	and no_3_ocupadas(carton)
+	and tres_con_una_celda(carton)
+	and decena_ordenadas(carton)
+	and col_ordenadas(carton)
+	and cinco_celdas(carton)
+	and contar_celdas_ocupadas(carton)
+	and columas_vacias(carton)
+	and matrix3x9(carton)
+	and uno_a_noventa(carton)):
+		return True
+
+    return False
+
+def carton_valido():
+
+	intentos = 0
+
+	while True:
+		carton = intentoCarton()
+
+		if testCarton(carton):
+			return carton
+
+		print intentos
+
+		intentos += 1
+
+mostrar(carton_valido())

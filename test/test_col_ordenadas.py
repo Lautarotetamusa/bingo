@@ -1,4 +1,4 @@
-from test.tests import col_ordenadas
+from src.tests import col_ordenadas
 from src.carton import intentoCarton
 from src.bingo import mostrar
 

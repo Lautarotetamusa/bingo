@@ -1,6 +1,6 @@
 from src.carton import intentoCarton
-from test.tests import columas_vacias
-from test.tests import contar_celdas_ocupadas
+from src.tests import columas_vacias
+from src.tests import contar_celdas_ocupadas
 
 def test_contar_celdas_ocupadas():
     mi_carton = intentoCarton()

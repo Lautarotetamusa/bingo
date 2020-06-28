@@ -1,6 +1,6 @@
 from src.carton import intentoCarton
 from src.bingo import mostrar
-from test.tests import ord_filas
+from src.tests import ord_filas
 
 def test_ord_filas():
     mi_carton = intentoCarton()

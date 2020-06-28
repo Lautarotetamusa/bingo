@@ -1,4 +1,4 @@
-from src.bingo import columna
+from bingo import columna
 
 def ord_filas(carton):
     for j in range(0, 3):
@@ -109,7 +109,6 @@ def no_3_ocupadas(carton):
 
     return True
 
-
 def tres_con_una_celda(carton):
     una_celda = 0
     for i in range(0, 9):
@@ -118,7 +117,6 @@ def tres_con_una_celda(carton):
             una_celda = una_celda + 1
 
     return una_celda == 3
-
 
 def decena_ordenadas(carton):
     decenasCorrectas = 0

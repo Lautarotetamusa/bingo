@@ -1,9 +1,9 @@
 from src.carton import intentoCarton
 from src.bingo import mostrar
 
-from test.tests import no_dos_ocupadas
-from test.tests import no_dos_vacias
-from test.tests import filas_vacias
+from src.tests import no_dos_ocupadas
+from src.tests import no_dos_vacias
+from src.tests import filas_vacias
 
 def test_filas_vacias():
     mi_carton = intentoCarton()

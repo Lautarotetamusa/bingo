@@ -1,5 +1,5 @@
 from src.carton import intentoCarton
-from test.tests import cinco_celdas
+from src.tests import cinco_celdas
 
 
 def test_cinco_celdas():
