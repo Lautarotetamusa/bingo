@@ -75,7 +75,7 @@ def imprimirCarton(carton):
         print('\n')
 
 def testCarton(carton):
-    if(ord_filas(carton)
+	if(ord_filas(carton)
 	and no_repetir_num(carton)
 	and filas_vacias(carton)
 	and no_dos_vacias(carton)
@@ -90,7 +90,7 @@ def testCarton(carton):
 	and columas_vacias(carton)
 	and matrix3x9(carton)
 	and uno_a_noventa(carton)):
-    	return True
+		return True
 	return False
 
 
