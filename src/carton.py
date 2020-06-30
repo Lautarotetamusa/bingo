@@ -100,12 +100,8 @@ def carton_valido():
 
 	while True:
 		carton = intentoCarton()
-
 		if testCarton(carton):
 			return carton
-
-		print intentos
-
 		intentos += 1
 
 print carton_valido()
