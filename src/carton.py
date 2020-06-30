@@ -104,6 +104,4 @@ def carton_valido():
 			return carton
 		intentos += 1
 
-print carton_valido()
-
 mostrar(carton_valido())
