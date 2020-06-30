@@ -5,7 +5,7 @@ def ord_filas(carton):
         for i in range(0, 8):
             if carton[j][i+1] != 0:
                 if carton[j][i] > carton[j][i+1]:
-					return False
+				    return False
 
     return True
 

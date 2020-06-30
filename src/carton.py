@@ -90,9 +90,9 @@ def testCarton(carton):
 	and columas_vacias(carton)
 	and matrix3x9(carton)
 	and uno_a_noventa(carton)):
-		return True
+    	return True
 
-    return False
+	return False
 
 def carton_valido():
 
@@ -107,5 +107,7 @@ def carton_valido():
 		print intentos
 
 		intentos += 1
+
+print carton_valido()
 
 mostrar(carton_valido())
