@@ -5,6 +5,6 @@ python:
   - 3.6
 cache: pip
 install:
-  - pip install pytest==5.4.2
+  - pip install pytest==4.6.9
 script:
   - pytest
