@@ -91,7 +91,6 @@ def testCarton(carton):
 	and matrix3x9(carton)
 	and uno_a_noventa(carton)):
     	return True
-		
 	return False
 
 
