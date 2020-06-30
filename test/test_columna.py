@@ -1,5 +1,4 @@
-from src.carton import carton_valido
-from src.bingo import mostrar
+from src.bingo import carton_valido
 
 from src.tests import decena_ordenadas
 from src.tests import tres_con_una_celda
@@ -21,5 +20,4 @@ def test_tres_con_una_celda():
 
 
 def test_decena_ordenadas():
-    mostrar(carton)
     assert decena_ordenadas(carton)

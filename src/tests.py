@@ -1,4 +1,11 @@
-from bingo import columna
+#=============funcion auxiliar============
+def columna(carton, nro_columna):
+    return(
+        carton[0][nro_columna],
+        carton[1][nro_columna],
+        carton[2][nro_columna]
+    )
+#=========================================
 
 def ord_filas(carton):
     for j in range(0, 3):

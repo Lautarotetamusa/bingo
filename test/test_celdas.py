@@ -1,4 +1,4 @@
-from src.carton import carton_valido
+from src.bingo import carton_valido
 from src.tests import columas_vacias
 from src.tests import contar_celdas_ocupadas
 

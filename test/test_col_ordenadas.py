@@ -1,8 +1,6 @@
 from src.tests import col_ordenadas
-from src.carton import carton_valido
-from src.bingo import mostrar
+from src.bingo import carton_valido
 
 def test_col_ordenadas():
     carton = carton_valido()
-    mostrar(carton)
     assert col_ordenadas(carton)

@@ -1,4 +1,4 @@
-from src.carton import carton_valido
+from src.bingo import carton_valido
 from src.tests import cinco_celdas
 
 
