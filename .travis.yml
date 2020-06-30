@@ -1,8 +1,5 @@
 language: python
-python:
-  - 3.8
-  - 3.7
-  - 3.6
+python: 2.7.17
 cache: pip
 install:
   - pip install pytest==4.6.9

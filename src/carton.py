@@ -1,4 +1,4 @@
-from tests import *
+from src.tests import *
 from bingo import mostrar
 import random
 import math
