@@ -1,8 +1,11 @@
 
 [![Build Status](https://travis-ci.org/Lautarotetamusa/bingo.svg?branch=master)](https://travis-ci.org/Lautarotetamusa/bingo)
 
+# Bingo
+	Proyecto que genera un carton de bingo hecho para la materia de AAT del
+	instituto politecnico superior.
 
-# Reglas que hacen que un cartón sea considerado válido:
+# Reglas:
 
 - Los números del carton se encuentran en el rango 1 a 90.
 - No hay números repetidos en el carton.
