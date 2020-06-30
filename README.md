@@ -1,4 +1,7 @@
 
+[![Build Status](https://travis-ci.org/Lautarotetamusa/bingo.svg?branch=master)](https://travis-ci.org/Lautarotetamusa/bingo)
+
+
 # Reglas que hacen que un cartón sea considerado válido:
 
 - Los números del carton se encuentran en el rango 1 a 90.
@@ -13,19 +16,3 @@
 - Cada carton debe tener 3 y solo 3 columas con solo una celda ocupada.
 - En una fila no existen más de dos celdas vacías consecutivas.
 - En una fila no existen más de dos celdas ocupadas consecutivas.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
