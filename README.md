@@ -1,8 +1,5 @@
 
-[![Build Status](https://travis-ci.org/Lautarotetamusa/bingo.svg?branch=master)](https://travis-ci.org/Lautarotetamusa/bingo)
-
-
-[![Coverage Status](https://coveralls.io/repos/github/Lautarotetamusa/bingo/badge.svg?branch=master)](https://coveralls.io/github/Lautarotetamusa/bingo?branch=master)
+[![Build Status](https://travis-ci.org/Lautarotetamusa/bingo.svg?branch=master)](https://travis-ci.org/Lautarotetamusa/bingo) [![Coverage Status](https://coveralls.io/repos/github/Lautarotetamusa/bingo/badge.svg?branch=master)](https://coveralls.io/github/Lautarotetamusa/bingo?branch=master)
 
 # Bingo
 Proyecto que genera un carton de bingo hecho para la materia de AAT del

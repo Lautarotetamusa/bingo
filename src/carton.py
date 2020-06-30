@@ -68,12 +68,6 @@ def intentoCarton():
 
     return carton
 
-def imprimirCarton(carton):
-    for columna in range(3):
-        for fila in range(9):
-            print(carton[columna][fila])
-        print('\n')
-
 def testCarton(carton):
 	if(ord_filas(carton)
 	and no_repetir_num(carton)
