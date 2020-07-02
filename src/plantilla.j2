@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style media="screen">
+			body{
+				background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+			}
+
+			.contenedor_tabla{
+				text-align: center;
+				margin-top: 200px;
+			}
+
+			table{
+				margin: 0 auto;
+				border: 2px solid black;
+				border-collapse: collapse;
+				box-shadow: 7px 7px 32px -3px rgba(77,77,77,0.67);
+			}
+
+			.boton{
+				color: #d35400; /*Color texto */
+	      border: 2px solid #d35400; /* Ancho de borde, estilo de línea y color */
+	      border-radius: 70px; /* Esquinas redondeadas */
+	      text-decoration: none;
+	      text-transform: uppercase; /* Mayúsculas */
+
+	      padding: 16px 32px;
+	      text-align: center;
+	      text-decoration: none;
+	      display: inline-block;
+	      font-size: 16px;
+	      margin: 15px 2px;
+	      transition-duration: 0.4s;
+	      cursor: pointer;
+			}
+			.boton:hover{
+				box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.25);
+	      background-color: #d35400;
+	      color: white;
+			}
+
+			td, tr{
+				border: 1px solid black;
+				text-align: center;
+				vertical-align: center;
+				width: 60px;
+				height: 60px;
+			}
+
+			.celda_ocupada{
+				background: #d35400;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class = "contenedor_tabla">
+			<form action = "src/bingoWeb.py" method = "POST">
+					<input class="boton" type="submit" name="renovar" value = "Run the Program!!!">
+			</form>
+
+			<table>
+			{% for fila in tabla %}
+			<tr>
+				{% for celda in fila %}
+				{% if celda == 0 %}
+					<td></td>
+				{% else %}
+					<td> {{celda}} </td>
+				{% endif %}
+				{% endfor %}
+			</tr>
+			{% endfor %}
+			</table>
+		</div>
+	</body>
+</html>
